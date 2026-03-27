@@ -16,11 +16,14 @@ class Widget {
   }
   
   void display() {
-    fill(100, 150, 255);
+    stroke(255);
+    strokeWeight(2);
+    fill(backgroundBlack);
     rect(x, y, w, h, 8);
-    fill(255);
+    fill(textGreen);
     textAlign(CENTER, CENTER);
-    textSize(16);
+    textFont(basicFont);
+    textSize(20);
     text(label, x + w/2, y + h/2);
   }
   
